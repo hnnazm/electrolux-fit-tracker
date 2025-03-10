@@ -1,0 +1,146 @@
+[
+  {
+    "_id": {
+      "$oid": "67d1555979a0cd9ea27324ea"
+    },
+    "steps": 1,
+    "heartBeat": 71,
+    "met": 1.2,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:35:21.423Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67d1551d79a0cd9ea27324e9"
+    },
+    "steps": 5,
+    "heartBeat": 73,
+    "met": 1,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:34:21.416Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67d154e179a0cd9ea27324e8"
+    },
+    "steps": 4,
+    "heartBeat": 74,
+    "met": 1.4,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:33:21.409Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67d154a579a0cd9ea27324e7"
+    },
+    "steps": 8,
+    "heartBeat": 71,
+    "met": 1.4,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:32:21.398Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67d1546979a0cd9ea27324e6"
+    },
+    "steps": 4,
+    "heartBeat": 75,
+    "met": 1,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:31:21.626Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67d1542d79a0cd9ea27324e5"
+    },
+    "steps": 15,
+    "heartBeat": 74,
+    "met": 1.3,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:30:21.438Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67d153f179a0cd9ea27324e4"
+    },
+    "steps": 2,
+    "heartBeat": 73,
+    "met": 1.1,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:29:21.394Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67d153b579a0cd9ea27324e3"
+    },
+    "steps": 5,
+    "heartBeat": 71,
+    "met": 1.4,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:28:21.446Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67d1537979a0cd9ea27324e2"
+    },
+    "steps": 6,
+    "heartBeat": 72,
+    "met": 1,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:27:21.469Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67d1533d79a0cd9ea27324e1"
+    },
+    "steps": 9,
+    "heartBeat": 70,
+    "met": 1.2,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:26:21.393Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67d153095ba88b49425d8583"
+    },
+    "steps": 4,
+    "heartBeat": 72,
+    "met": 1.2,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:25:29.580Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67d152cd5ba88b49425d8582"
+    },
+    "steps": 10,
+    "heartBeat": 74,
+    "met": 1.3,
+    "userId": "abc123def456",
+    "createdAt": {
+      "$date": "2025-03-12T09:24:29.626Z"
+    }
+  }
+]

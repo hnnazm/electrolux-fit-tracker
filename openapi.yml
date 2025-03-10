@@ -1,0 +1,86 @@
+openapi: 3.0.3
+info:
+  title: Fit Tracker
+  description: |-
+    API specification for exposed endpoint
+  version: 1.0.0
+servers:
+  - url: http://localhost:8081
+tags:
+  - name: fit-tracker
+    description: Access fit-tracker data
+
+paths:
+  /api/v1/user/{userId}:
+    get:
+      tags:
+        - fit-tracker
+      summary: Get user's summary
+      description: |-
+        Get user's summary:
+          - total step
+          - distance
+          - average heart beat
+          - Kcal burned
+      parameters:
+        - name: userId
+          in: path
+          description: ID of the user
+          required: true
+          schema:
+            type: string
+        - name: date
+          in: query
+          description: Date for data retrieval
+          required: true
+          schema:
+            type: string
+            format: YYYY-MM-DD
+            example: 2025-03-12
+        - name: weight
+          in: query
+          description: Weight in kg
+          required: true
+          schema:
+            type: number
+            example: 62
+
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserSummary'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                InvalidDate:
+                  summary: Invalid Date
+                  value: {"message": "invalid date value"}
+                InvalidWeight:
+                  summary: Invalid Weight
+                  value: {"message": "invalid weight value"}
+
+components:
+  schemas:
+    UserSummary:
+      type: object
+      properties:
+        steps:
+          type: integer
+        distance:
+          type: number
+        averageHeartBeat:
+          type: number
+        kcalBurned:
+          type: number
+    Error:
+      type: object
+      properties:
+        message:
+          type: string

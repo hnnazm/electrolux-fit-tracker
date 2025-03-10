@@ -1,0 +1,25 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fit-tracker
+    working_dir: /app
+    depends_on:
+      - database
+    env_file: .env
+    ports:
+      - "8081:8081"
+    restart: on-failure
+
+  database:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - dbdata:/data/db
+
+volumes:
+  dbdata:
