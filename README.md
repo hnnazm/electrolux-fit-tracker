@@ -22,3 +22,32 @@
 1. `compose.yml` - Docker compose setup that includes Go (built from Dockerfile) and MongoDB
 1. `compose.override.yml` - Docker compose setup with override settings for development environment
 1. `openapi.yml` - OpenAPI specification for the API server (second task)
+
+## Setting Up
+
+### Required Tools
+
+1. Docker
+
+### Steps
+
+### #1 Configure the environment variables
+
+```bash
+cp .env.example .env
+```
+
+Edit the environment variables accordingly
+
+### #2 Run the container
+
+```bash
+docker compose up 
+```
+
+### #3 Verify
+
+There are several containers that can be accessed directly:
+
+1. Go HTTP Server: [localhost:8081](http://localhost:8081)
+1. Mongo Express: [localhost:8888](http://localhost:8888) (user & password in `.env.example`)
